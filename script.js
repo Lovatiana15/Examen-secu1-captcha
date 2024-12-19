@@ -8,7 +8,7 @@ async function fetchWhoAmI(index) {
         if (response.status === 403) {
             return "Forbidden";
         } else {
-            return `Erreur : ${response.status}`;
+            return `Forbidden : ${response.status}`;
         }
     } catch (error) {
         return `Erreur réseau : ${error.message}`;
